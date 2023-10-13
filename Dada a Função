@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int funcao(int a) {
+    int result = (a * a) - (3 * a) + 5;
+    return result;
+}
+
+int main() {
+    int x;
+
+    cout << "Informe um numero real:\n";
+    cin >> x;
+
+    int s = funcao(x);
+    cout << "O resultado da função é: " << s << endl;
+
+    return 0;
+}
