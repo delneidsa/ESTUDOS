@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+#define pi 3.1415 \\ DEFINE É UM  VALOR QUE NÃO PODE SER MUDADO , CONSTANTE 
+#define MENSAGEM "Canal Fessor Brunolnin"
+
+int main() {
+    int vidas = 3, tiros = 500, life = 100; \\DESCLARAÇÕES MULTIPLAS
+
+    cout << pi << "\n\n";
+    cout << MENSAGEM;
+
+    return 6;
+}
