@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+    float x;
+    float y;
+    float m;
+    char sn;
+
+inicio: 
+    system("clear"); \\CLEAR E LINUX E CLS É WIND
+
+    cout << "\nInforme sua primeira nota:\n";
+    cin >> x;
+    cout << "\nInforme sua segunda nota:\n";
+    cin >> y;
+
+    m = (x + y) / 2;
+
+    if (m >= 6) {
+        cout << "\nAluno aprovado!\n" << "\nSua nota foi: " << m << endl;
+    } else {
+        cout << "\nAluno reprovado!\n" << "\nSua nota foi: " << m << endl;
+    }
+    
+    cout << "Gostaria de calcular novamente? [S/N]";
+    cin >> sn;
+
+    if (sn == 'S' || sn == 's') {
+        goto inicio;
+    } else if (sn == 'N' || sn == 'n') {
+        cout << "Até a próxima!\n";
+    } else {
+        cout << "Erro! Digite [S/N] ";
+    }
+
+    return 0;
+}
