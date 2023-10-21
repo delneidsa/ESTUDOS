@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+    int main (){
+    float x;
+    float y;
+    float z;
+    float media;
+    
+
+    cout << "Informe primeira nota\n";
+    cin >> x;
+    cout << "Informe sua segunda nota\n";
+    cin >> y;
+    cout << "Informe sua terceira nota\n";
+    cin >> z;
+    media = (x+y+z)/3;
+  
+(media >= 5)? cout<<"Aprovado !\n" "Sua nota :" << media : cout<<"Reprovado"<< media ;
+
+
+
+    return 0;
+}
