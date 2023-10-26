@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int valor, tomverde, tomazul;
+
+inicio:
+
+    cout << "\nSelecione uma cor: \n";
+    cout << "[1]= Verde  [2]= Azul :   ";
+
+    cin >> valor;
+
+    switch (valor) {
+        case 1:
+            cout << "Agora escolha o tom do verde\n";
+            cout << "[7]= Verde claro   [8]= Verde escuro:    ";
+            cin >> tomverde;
+
+            switch (tomverde) {
+                case 7:
+                    cout << "Escolheste o tom claro.\n";
+                    break;
+                case 8:
+                    cout << "Escolheste o tom escuro.\n";
+                    break;
+                default:
+                    cout << "Comando inexistente.\n";
+                    goto inicio;
+            }
+            break;
+
+        case 2:
+            cout << "Agora escolha o tom do azul\n";
+            cout << "[4]= Azul claro   [5]= Azul escuro:    ";
+            cin >> tomazul;
+
+            switch (tomazul) {
+                case 4:
+                    cout << "Escolheste o tom claro.\n";
+                    break;
+                case 5:
+                    cout << "Escolheste o tom escuro.\n";
+                    break;
+                default:
+                    cout << "Comando inexistente.\n";
+                    goto inicio;
+            }
+            break;
+
+        default:
+            cout << "Comando inexistente\n";
+            goto inicio;
+    }
+
+    cout << "\nFim da pesquisa.\n";
+
+    goto inicio;
+
+    return 0;
+}
