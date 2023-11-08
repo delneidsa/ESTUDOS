@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float cent, metro,x;
+    int y;
+inicio:
+    cout << "Informe 1 para converter de Metro para Centímetro ou 2 para converter de Centímetro para Metro: ";
+    cin >> y;
+
+    switch (y) {
+        case 1:
+            cout << "Informe o valor em metros: ";
+            cin >> metro;
+            x = metro * 100;
+            cout << metro << " metros é igual a " << x << " centímetros." << endl;
+            break;
+
+        case 2:
+            cout << "Informe o valor em centímetros: ";
+            cin >> cent;
+            x = cent / 100;
+            cout << cent << " centímetros é igual a " << x << " metros." << endl;
+            break;
+
+        default:
+            cout << "Opção inválida. Informe 1 ou 2." << endl;
+            goto inicio;
+    }
+
+    return 0;
+}
