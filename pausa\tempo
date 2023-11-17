@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, soma;
+    char op;
+ 
+     cout << "Vamos calcular uma soma : " << endl;
+  
+     for (int temp = 0; temp <1000000000;temp++);
+ 
+    do {    cout << "\nInforme o primeiro numero: ";
+        cin >> a;
+ 
+        cout << "Informe o segundo numero: ";
+        cin >> b;
+
+        soma = a + b;
+
+        cout << "A soma de " << a << " e " << b << " é: " << soma << endl;
+
+      cout << "Gostaria de somar novamente ?" << "  " << "Sim[S] Não [N]\n";
+      cin >> op; 
+        
+    }while (op == 'S' || op == 's');
+      
+     if (op != 'S' && op != 's' && op != 'N' && op != 'n') {
+         cout << "Comando desconhecido";
+    }
+       cout<< " Até a proxima ! "  << endl;  
+
+
+
+
+    return 0;
+}
